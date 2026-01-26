@@ -11,7 +11,7 @@ import SwiftUI
 struct ProfileManagementApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
