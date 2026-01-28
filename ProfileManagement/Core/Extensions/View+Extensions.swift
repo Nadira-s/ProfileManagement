@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUICore
 
 extension UIApplication {
     var rootViewController: UIViewController? {
@@ -14,5 +15,22 @@ extension UIApplication {
             .flatMap { $0.windows }
             .first { $0.isKeyWindow }?
             .rootViewController
+    }
+}
+extension View {
+    func cardStyle() -> some View {
+        modifier(CardModifier())
+    }
+}
+
+extension View {
+    func appShadow() -> some View {
+        modifier(ShadowModifier())
+    }
+}
+
+extension View {
+    func AppFont(_ font: Font) -> some View {
+        self.modifier(AppFontModifier(font: font))
     }
 }

@@ -86,13 +86,13 @@ class EditProfileViewModel: ObservableObject {
     
     func validate() {
         if fullName.trimmingCharacters(in: .whitespaces).isEmpty {
-            fullNameError = "Full name cannot be empty"
+            fullNameError = Strings.Validator.validateFullName
         } else {
             fullNameError = nil
         }
 
         if phoneNumber.isEmpty || !phoneNumber.allSatisfy({ $0.isNumber }) {
-            phoneError = "Phone must be numeric"
+            phoneError = Strings.Validator.validatePhone2
         } else {
             phoneError = nil
         }
@@ -125,7 +125,7 @@ class EditProfileViewModel: ObservableObject {
             } catch {
                 DispatchQueue.main.async {
                     self.isSaving = false
-                    self.errorMessage = "Failed to save profile"
+                    self.errorMessage = Strings.Validator.validateEmail
                 }
             }
         }

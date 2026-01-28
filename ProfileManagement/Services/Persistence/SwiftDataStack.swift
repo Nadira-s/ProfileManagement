@@ -19,7 +19,7 @@ final class SwiftDataStack {
             self.container = try ModelContainer(for: Profile.self)
             self.context = container.mainContext
         }catch{
-            fatalError("Couldn't create SwiftData container: \(error)")
+            fatalError("\(Strings.Validator.errorSwiftData): \(error)")
         }
         
     }

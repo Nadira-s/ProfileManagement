@@ -16,8 +16,4 @@ struct CardModifier: ViewModifier {
     }
 }
 
-extension View {
-    func cardStyle() -> some View {
-        modifier(CardModifier())
-    }
-}
+

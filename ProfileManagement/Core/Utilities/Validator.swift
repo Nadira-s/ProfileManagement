@@ -7,22 +7,22 @@
 
 import Foundation
 
-enum Validator {
+struct Validator {
 
     static func validateFullName(_ name: String) -> String? {
         if name.trimmingCharacters(in: .whitespaces).isEmpty {
-            return "Full name cannot be empty"
+            return Strings.Validator.validateFullName
         }
         return nil
     }
 
     static func validatePhone(_ phone: String) -> String? {
         if phone.isEmpty {
-            return "Phone is required"
+            return Strings.Validator.validatePhone1
         }
 
         if !phone.allSatisfy({ $0.isNumber }) {
-            return "Phone must contain only numbers"
+            return Strings.Validator.validatePhone2
         }
 
         return nil

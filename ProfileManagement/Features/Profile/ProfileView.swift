@@ -22,16 +22,16 @@ struct ProfileView: View {
                 )
 
                 VStack(spacing: 25) {
-                    InfoRow(title: "Full Name", value: viewModel.profile.fullName)
-                    InfoRow(title: "Email", value: viewModel.profile.email)
-                    InfoRow(title: "Phone", value: viewModel.profile.phoneNumber)
+                    InfoRow(title: Strings.Profile.fullName, value: viewModel.profile.fullName)
+                    InfoRow(title: Strings.Profile.email, value: viewModel.profile.email)
+                    InfoRow(title: Strings.Profile.phone, value: viewModel.profile.phoneNumber)
                 }
                 .padding()
                 .background(Color(.systemGray6))
                 .cornerRadius(15)
                 
 
-                PrimaryButton(title: "Edit Profile") {
+                PrimaryButton(title: Strings.Profile.button) {
                     viewModel.editProfileTapped()
                 }
                 .padding(.top, 20)
@@ -40,7 +40,7 @@ struct ProfileView: View {
             }
             .padding()
         }
-        .navigationTitle("Profile")
+        .navigationTitle(Strings.Profile.title)
         .onAppear {
             viewModel.onAppear()
         }

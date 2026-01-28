@@ -36,7 +36,7 @@ final class ProfileViewModel: ObservableObject {
                 loadAvatar(from: storedProfile)
             }
         } catch {
-            print("❌ Failed to fetch profile:", error)
+            print(Strings.Validator.fetchProfile, error)
         }
     }
 

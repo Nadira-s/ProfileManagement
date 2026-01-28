@@ -10,9 +10,9 @@ import Foundation
 
 struct PreviewData {
     static let testProfile = Profile(
-        fullName: "Alex Morty",
-        email: "alex@mail.com",
-        phoneNumber: "89001234567",
+        fullName: Strings.PreviewData.fullName ,
+        email:Strings.PreviewData.email ,
+        phoneNumber: Strings.PreviewData.phone,
         avatarData: nil
         )
 }

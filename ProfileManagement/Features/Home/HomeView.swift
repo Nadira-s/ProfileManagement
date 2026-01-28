@@ -15,11 +15,11 @@ struct HomeView: View {
     var body: some View {
         VStack(spacing: 24) {
 
-            Text("Profile Management")
+            Text(Strings.Home.title)
                 .font(FontTheme.title)
                 .foregroundColor(ColorTheme.textPrimary)
 
-            PrimaryButton(title: "Go to Profile") {
+            PrimaryButton(title: Strings.Home.buttonTitle) {
                 viewModel.goToProfile()
             }
         }
