@@ -8,7 +8,13 @@
 import SwiftUI
 
 enum FontTheme {
-    static let title = Font.system(size: 24, weight: .bold)
-    static let body = Font.system(size: 16, weight: .regular)
-    static let caption = Font.system(size: 13, weight: .regular)
+    static func title(weight: Font.Weight = .bold) -> Font {
+        .system(size: 16, weight: weight)
+    }
+    static func body(weight: Font.Weight = .regular) -> Font {
+        .system(size: 16, weight: weight)
+    }
+    static func caption(weight: Font.Weight = .regular) -> Font {
+        .system(size: 13, weight:weight)
+    }
 }

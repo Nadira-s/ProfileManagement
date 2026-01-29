@@ -15,7 +15,7 @@ struct AppSecureField: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
-                .font(FontTheme.caption)
+                .font(FontTheme.caption())
 
             SecureField("", text: $text)
                 .padding(10)

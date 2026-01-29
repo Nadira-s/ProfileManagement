@@ -8,6 +8,18 @@
 import UIKit
 import SwiftUICore
 
+
+extension View {
+    func cardStyle() -> some View {
+        modifier(CardModifier())
+    }
+    func appShadow() -> some View {
+        modifier(ShadowModifier())
+    }
+    func AppFont(_ font: Font) -> some View {
+        self.modifier(AppFontModifier(font: font))
+    }
+}
 extension UIApplication {
     var rootViewController: UIViewController? {
         connectedScenes
@@ -17,20 +29,4 @@ extension UIApplication {
             .rootViewController
     }
 }
-extension View {
-    func cardStyle() -> some View {
-        modifier(CardModifier())
-    }
-}
 
-extension View {
-    func appShadow() -> some View {
-        modifier(ShadowModifier())
-    }
-}
-
-extension View {
-    func AppFont(_ font: Font) -> some View {
-        self.modifier(AppFontModifier(font: font))
-    }
-}

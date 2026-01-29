@@ -17,7 +17,7 @@ struct AppTextField: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
-                .font(FontTheme.caption)
+                .font(FontTheme.caption())
                 .foregroundColor(ColorTheme.textSecondary)
 
             TextField("", text: $text)

@@ -16,7 +16,7 @@ struct HomeView: View {
         VStack(spacing: 24) {
 
             Text(Strings.Home.title)
-                .font(FontTheme.title)
+                .font(FontTheme.title())
                 .foregroundColor(ColorTheme.textPrimary)
 
             PrimaryButton(title: Strings.Home.buttonTitle) {
