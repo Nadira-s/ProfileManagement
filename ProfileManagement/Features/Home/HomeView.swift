@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
 
-    @StateObject var viewModel: HomeViewModel
+    @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
         VStack(spacing: 24) {
@@ -24,5 +24,7 @@ struct HomeView: View {
             }
         }
         .padding()
+        .background(ColorTheme.background)
+        .ignoresSafeArea()
     }
 }

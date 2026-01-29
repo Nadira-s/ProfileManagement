@@ -8,11 +8,11 @@
 import SwiftUI
 
 enum ColorTheme {
-    static let primary = Color("Primary")
-    static let secondary = Color("Secondary")
-    static let background = Color("Background")
-    static let cardBackground = Color("CardBackground")
-    static let textPrimary = Color("TextPrimary")
-    static let textSecondary = Color("TextSecondary")
-    static let error = Color("Error")
+    static let primary = Color("primary")
+    static let secondary = Color("secondary")
+    static let background = Color("background")
+    static let cardBackground = Color("cardBackground")
+    static let textPrimary = Color("textPrimary")
+    static let textSecondary = Color("textSecondary")
+    static let error = Color("error")
 }

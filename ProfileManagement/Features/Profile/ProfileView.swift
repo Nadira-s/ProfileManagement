@@ -27,7 +27,7 @@ struct ProfileView: View {
                     InfoRow(title: Strings.Profile.phone, value: viewModel.profile.phoneNumber)
                 }
                 .padding()
-                .background(Color(.systemGray6))
+                .background(ColorTheme.cardBackground)
                 .cornerRadius(15)
                 
 

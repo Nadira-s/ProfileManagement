@@ -3,7 +3,7 @@
     {
       "color" : {
         "platform" : "ios",
-        "reference" : "secondarySystemBackgroundColor"
+        "reference" : "systemGray6Color"
       },
       "idiom" : "universal"
     },
@@ -18,9 +18,9 @@
         "color-space" : "srgb",
         "components" : {
           "alpha" : "1.000",
-          "blue" : "0.170",
-          "green" : "0.140",
-          "red" : "0.130"
+          "blue" : "0.149",
+          "green" : "0.122",
+          "red" : "0.110"
         }
       },
       "idiom" : "universal"
@@ -29,5 +29,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }

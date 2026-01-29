@@ -8,7 +8,15 @@
 import UIKit
 import SwiftUICore
 
-
+extension UIApplication {
+    var rootViewController: UIViewController? {
+        connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap { $0.windows }
+            .first { $0.isKeyWindow }?
+            .rootViewController
+    }
+} 
 extension View {
     func cardStyle() -> some View {
         modifier(CardModifier())
@@ -20,13 +28,5 @@ extension View {
         self.modifier(AppFontModifier(font: font))
     }
 }
-extension UIApplication {
-    var rootViewController: UIViewController? {
-        connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .flatMap { $0.windows }
-            .first { $0.isKeyWindow }?
-            .rootViewController
-    }
-}
+
 
