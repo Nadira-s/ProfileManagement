@@ -35,7 +35,7 @@ struct Strings {
     }
     struct PreviewData {
         static let fullName = "Alex Morty"
-        static let email = "alex@mail.com"
+        static let email = "alexmorty@mail.com"
         static let phone = "89001234567"
     }
 }
