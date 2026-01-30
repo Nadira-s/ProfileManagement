@@ -14,11 +14,11 @@ struct InfoRow: View {
         HStack {
             Text(title)
                 .font(.headline)
-                .foregroundColor(.gray)
+                .foregroundColor(ColorTheme.avatar)
             Spacer()
             Text(value)
                 .font(.body)
-                .foregroundColor(.primary)
+                .foregroundColor(ColorTheme.textPrimary)
         }
     }
 }

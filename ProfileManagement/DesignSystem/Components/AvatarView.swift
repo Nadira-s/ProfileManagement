@@ -22,7 +22,7 @@ struct AvatarView: View {
                     .fill(Color.gray.opacity(0.3))
                     .overlay(
                         Image(systemName: "person.fill")
-                            .foregroundColor(.gray)
+                            .foregroundColor(ColorTheme.avatar)
                     )
             }
         }

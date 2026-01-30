@@ -15,4 +15,6 @@ enum ColorTheme {
     static let textPrimary = Color("textPrimary")
     static let textSecondary = Color("textSecondary")
     static let error = Color("error")
+    static let avatar = Color("avatar")
+    static let textButton = Color("textButton")
 }

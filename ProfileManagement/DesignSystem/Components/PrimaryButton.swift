@@ -17,10 +17,10 @@ struct PrimaryButton: View {
         Button(action: action) {
             Text(title)
                 .font(FontTheme.body())
-                .foregroundColor(.white)
+                .foregroundColor(ColorTheme.textButton)
                 .frame(maxWidth: .infinity)
                 .padding()
-                .background(isDisabled ? Color.gray : ColorTheme.primary)
+                .background(isDisabled ? ColorTheme.avatar : ColorTheme.primary)
                 .cornerRadius(10)
         }
         .disabled(isDisabled)
